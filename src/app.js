@@ -9,3 +9,16 @@ window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
 };
+
+let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King"];
+let suit = ["heart", "club", "spades", "diamonds"];
+
+domainName() = () => {
+  let arr = [];
+  for (let i = 0; i < number.length; i++) {
+    for (let j = 0; j < suit.length; j++) {
+      arr.push(number[i] + suit[j]);
+    }
+  }
+};
+document.querySelector("#randomCardGenerator").innerHTML = arr;
